@@ -13,22 +13,22 @@ export default async (request, context) => {
   const isRobloxStudioPlayMode = xRobloxStudio === 'true'; // Custom header that can be set during Play mode
 
   if (isRobloxGameClient) {
-    return new Response('Welcome to the Roblox Game Client!', {
+    return new Response('HEHEHEHAHAHA I PUT IT HERE AND THEN YEAH ITS OVER HAHAHAHA!!', {
       status: 200,
       headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
   } else if (isRobloxStudioEditMode) {
-    return new Response('You are in Roblox Studio Edit Mode!', {
+    return new Response('191816425', {
       status: 200,
       headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
   } else if (isRobloxStudioPlayMode) {
-    return new Response('You are in Roblox Studio Play Mode!', {
+    return new Response('191816425', {
       status: 200,
       headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
   } else {
-    return new Response('You are not coming from Roblox Game Client or Studio!', {
+    return new Response('191816425', {
       status: 200,
       headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
