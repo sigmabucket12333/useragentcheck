@@ -1,0 +1,6 @@
+[build]
+  functions = "functions"
+
+[[edge_functions]]
+  path = "/check-origin"
+  function = "origin-check"
