@@ -1,5 +1,6 @@
 [build]
   functions = "functions"
+  publish = "public"
 
 [[edge_functions]]
   path = "/check-origin"
