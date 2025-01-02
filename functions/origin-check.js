@@ -13,24 +13,24 @@ export default async (request, context) => {
   const isRobloxStudioPlayMode = xRobloxStudio === 'true'; // Custom header that can be set during Play mode
 
   if (isRobloxGameClient) {
-    return new Response('<h1>Welcome to the Roblox Game Client!</h1>', {
+    return new Response('Welcome to the Roblox Game Client!', {
       status: 200,
-      headers: { 'Content-Type': 'text/html' }
+      headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
   } else if (isRobloxStudioEditMode) {
-    return new Response('<h1>You are in Roblox Studio Edit Mode!</h1>', {
+    return new Response('You are in Roblox Studio Edit Mode!', {
       status: 200,
-      headers: { 'Content-Type': 'text/html' }
+      headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
   } else if (isRobloxStudioPlayMode) {
-    return new Response('<h1>You are in Roblox Studio Play Mode!</h1>', {
+    return new Response('You are in Roblox Studio Play Mode!', {
       status: 200,
-      headers: { 'Content-Type': 'text/html' }
+      headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
   } else {
-    return new Response('<h1>You are not coming from Roblox Game Client or Studio!</h1>', {
+    return new Response('You are not coming from Roblox Game Client or Studio!', {
       status: 200,
-      headers: { 'Content-Type': 'text/html' }
+      headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
   }
 };
