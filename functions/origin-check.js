@@ -13,7 +13,7 @@ export default async (request, context) => {
   const isRobloxStudioPlayMode = xRobloxStudio === 'true'; // Custom header that can be set during Play mode
 
   if (isRobloxGameClient) {
-    return new Response('HEHEHEHAHAHA I PUT IT HERE AND THEN YEAH ITS OVER HAHAHAHA!!', {
+    return new Response('124286295668463', {
       status: 200,
       headers: { 'Content-Type': 'text/plain' } // Plain text response
     });
